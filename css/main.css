@@ -1,0 +1,42 @@
+:root{
+    --first--color:#34495e;
+    --white--color:#fff;
+    --second--color:#2c3e50;
+  }
+
+  *{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+  }
+
+  body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game_board{
+    width:500px;
+    height:500px;
+    margin:auto;
+    background: var(--first--color);
+    color:var(--white--color);
+    border:.7rem;
+    display:grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  }
+
+  .square{
+    
+    border: 6px solid var(--second--color);
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    cursor: pointer;
+  }
