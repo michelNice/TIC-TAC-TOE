@@ -13,16 +13,24 @@
   body{
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+  }
+
+  button{
+    padding:.6rem 1.5rem;
+    background: yellowgreen;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
   }
   
   .game_board{
-    width:500px;
-    height:500px;
-    margin:auto;
+    width:400px;
+    height:400px;
+    margin:2rem auto;
     background: var(--first--color);
     color:var(--white--color);
     border:.7rem;
